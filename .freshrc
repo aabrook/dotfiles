@@ -1,0 +1,27 @@
+# freshshell.com
+#
+# Examples:
+#
+#   fresh twe4ked/dotfiles shell/functions/\*
+#   fresh jasoncodes/dotfiles shell/aliases/rails.sh
+#   fresh jasoncodes/dotfiles config/tmux.conf --file
+#
+# See http://freshshell.com/readme for documentation.
+
+fresh freshshell/fresh bin/fresh --bin
+
+fresh vim/begin.vim --file=~/.vimrc
+fresh-options --file=~/.vimrc
+  fresh vim/config/\*.vim
+fresh-options
+
+fresh-options --file=~/.vimrc
+  fresh vim/plugins/\*.vim
+fresh-options
+fresh vim/end.vim --file=~/.vimrc
+
+# Post setup scripts
+~/.dotfiles/scripts/setup/vim.sh
+
+# Need to setup git config
+git config --global core.editor $(which vim)

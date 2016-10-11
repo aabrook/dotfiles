@@ -6,3 +6,6 @@ inoremap <C-T> <ESC>:FZF<CR>i
 nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
+" == split pane config
+nnoremap <C-S> :vsp<CR>
+nnoremap <C-A> :sp<CR>
