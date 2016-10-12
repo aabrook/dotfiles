@@ -7,5 +7,4 @@ nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
 " == split pane config
-nnoremap <C-S> :vsp<CR>
-nnoremap <C-A> :sp<CR>
+nnoremap <C-A> :vsp<CR>
