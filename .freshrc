@@ -9,13 +9,13 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
-fresh vim/begin.vim --file=~/.vimrc
 fresh JonathonMA/dotfiles vim/config/mouse.vim --file=~/.vimrc
 
 fresh-options --file=~/.vimrc
   fresh vim/config/\*.vim
 fresh-options
 
+fresh vim/begin.vim --file=~/.vimrc
 fresh-options --file=~/.vimrc
   fresh vim/plugins/\*.vim
 fresh-options

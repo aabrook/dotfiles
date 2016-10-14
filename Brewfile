@@ -1,7 +1,7 @@
 the_silver_searcher
 git
 caskroom/cask/brew-cask
-neovim/neovim/neovim
+vim
 tree
 elixir
 docker-compose

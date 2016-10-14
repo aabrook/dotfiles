@@ -8,3 +8,9 @@ inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
 " == split pane config
 nnoremap <C-A> :vsp<CR>
+
+" == remap code complete
+inoremap <C-Space> <C-N>
+
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>

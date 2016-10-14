@@ -29,8 +29,11 @@ map <Leader>sw :w<Cr>
 syntax enable       " Syntax highlighting
 set hidden          " Allow hiding buffers with unsaved changes
 set number          " Show line numbers
+set rnu
+set scrolloff=3     " Keep 3 context lines above and below cursor
 set ruler           " Show cursor position
 set spelllang=en_au " Australian English
+hi CursorLineNr ctermfg=7     " highlght current line number
 
 " Persistent undo
 set undofile                " Save undo's after file closes
