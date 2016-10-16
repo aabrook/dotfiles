@@ -21,6 +21,9 @@ fresh-options --file=~/.vimrc
 fresh-options
 fresh vim/end.vim --file=~/.vimrc
 
+fresh vim/snippets/javascript.snippets --file=~/.vim/snippets/javascript.snippets
+fresh vim/snippets/ruby.snippets --file=~/.vim/snippets/ruby.snippets
+
 # Post setup scripts
 ~/.dotfiles/scripts/setup/vim.sh
 
