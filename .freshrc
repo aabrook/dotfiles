@@ -25,7 +25,7 @@ fresh vim/snippets/javascript.snippets --file=~/.vim/snippets/javascript.snippet
 fresh vim/snippets/ruby.snippets --file=~/.vim/snippets/ruby.snippets
 
 # Post setup scripts
-~/.dotfiles/scripts/setup/vim.sh
+#~/.dotfiles/scripts/setup/vim.sh
 
 # Need to setup git config
 git config --global core.editor $(which vim)

@@ -1,15 +1,21 @@
-snippet clog
-  console.log(${1})
+snippet cl
+	console.log(${1})
 
-snippet import
-  import ${1} from '${2}'
+snippet cw
+	console.warn(${1})
+
+snippet ce
+	console.error(${1})
+
+snippet imp
+	import ${1} from '${2}'
 
 snippet setup
-  beforeEach() => {
-    ${2}
-  })
+	beforeEach(() => {
+		${1}
+	})
 
 snippet teardown
-  afterEach() => {
-    ${2}
-  })
+	afterEach(() => {
+		${1}
+	})
