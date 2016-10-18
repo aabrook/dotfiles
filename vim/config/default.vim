@@ -22,22 +22,24 @@ set nowb
 set noswapfile
 
 " Bindings
-nnoremap <Leader>/ :noh<CR><ESC>|"                    Clear highlights
-map <Leader>sw :w<Cr>
+nnoremap <Leader>/ :noh<CR><ESC>| "Clear highlights
 
 " Window
 syntax enable       " Syntax highlighting
 set hidden          " Allow hiding buffers with unsaved changes
 set number          " Show line numbers
-set rnu
+" set rnu           " This is disabled for now as it's crazy slow in iterm2
 set scrolloff=3     " Keep 3 context lines above and below cursor
 set ruler           " Show cursor position
 set spelllang=en_au " Australian English
-hi CursorLineNr ctermfg=7     " highlght current line number
+" hi CursorLineNr ctermfg=7 " highlght current line number
 
 " Persistent undo
 set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " Where to save histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
+
+syntax on
+colorscheme eclipse
 
