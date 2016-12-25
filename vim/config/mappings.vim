@@ -3,8 +3,8 @@ nnoremap <C-T> :FZF<CR>
 inoremap <C-T> <ESC>:FZF<CR>i
 
 " == scrooloose/nerdtree ==
-nnoremap <C-\> :NERDTreeToggle<CR>
-inoremap <C-\> <ESC>:NERDTreeToggle<CR>
+nnoremap <C-\> :NERDTreeTabsToggle<CR>
+inoremap <C-\> <ESC>:NERDTreeTabsToggle<CR>
 nnoremap <C-P> :NERDTreeFind<CR>
 inoremap <C-P> <ESC>:NERDTreeFind<CR>
 
