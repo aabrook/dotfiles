@@ -17,9 +17,9 @@ set foldlevelstart=99         " Expand all folds by default.
 set backspace=2
 
 " Disable backup. No swap files.
-set nobackup
-set nowb
-set noswapfile
+" set nobackup
+" set nowb
+" set noswapfile
 
 " Bindings
 nnoremap <Leader>/ :noh<CR><ESC>| "Clear highlights
@@ -28,7 +28,6 @@ nnoremap <Leader>/ :noh<CR><ESC>| "Clear highlights
 syntax enable       " Syntax highlighting
 set hidden          " Allow hiding buffers with unsaved changes
 set number          " Show line numbers
-" set rnu           " This is disabled for now as it's crazy slow in iterm2
 set scrolloff=3     " Keep 3 context lines above and below cursor
 set ruler           " Show cursor position
 set spelllang=en_au " Australian English
