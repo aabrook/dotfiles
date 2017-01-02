@@ -19,7 +19,7 @@ set backspace=2
 " Disable backup. No swap files.
 " set nobackup
 " set nowb
-" set noswapfile
+set noswapfile
 
 " Bindings
 nnoremap <Leader>/ :noh<CR><ESC>| "Clear highlights
