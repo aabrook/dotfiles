@@ -9,7 +9,7 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
-fresh JonathonMA/dotfiles vim/config/mouse.vim --file=~/.vimrc
+fresh rupa/z z.sh
 
 fresh-options --file=~/.vimrc
   fresh vim/config/\*.vim
