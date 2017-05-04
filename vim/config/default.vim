@@ -42,3 +42,5 @@ set undoreload=10000        " Number of lines to save
 
 syntax on
 colorscheme eclipse
+
+map <c-d> :q<CR>
