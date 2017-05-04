@@ -3,6 +3,7 @@ set nocompatible
 set ignorecase " Case insensitive search
 set incsearch  " Makes search act like search in modern browsers
 set hlsearch   " Highlight search results
+map <F5> /\(<c-r>=expand("<cword>")<CR>\)/<CR>
 
 " Whitespace
 set listchars=tab:▸\ ,trail:· " Show tabs, trailing whitespace and end of lines
@@ -41,4 +42,3 @@ set undoreload=10000        " Number of lines to save
 
 syntax on
 colorscheme eclipse
-
