@@ -41,6 +41,6 @@ set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
 
 syntax on
-colorscheme eclipse
+" colorscheme eclipse
 
 map <c-d> :q<CR>

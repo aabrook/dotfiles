@@ -15,7 +15,7 @@ fresh-options --file=~/.vimrc
   fresh vim/config/\*.vim
 fresh-options
 
-fresh vim/schemes/eclipse.vim --file=~/.vim/colors/eclipse.vim
+# fresh vim/schemes/eclipse.vim --file=~/.vim/colors/eclipse.vim
 
 fresh vim/begin.vim --file=~/.vimrc
 fresh-options --file=~/.vimrc
