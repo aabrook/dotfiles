@@ -1,0 +1,19 @@
+{
+  "name": "helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "themer -c themer-colors-default -t themer-vim -t themer-iterm -o themer-gen"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "themer": "^2.2.2",
+    "themer-colors-default": "^1.0.3",
+    "themer-iterm": "^1.0.3",
+    "themer-vim": "^2.2.6",
+    "themer-wallpaper-block-wave": "^1.0.4"
+  }
+}
