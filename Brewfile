@@ -8,3 +8,4 @@ docker-compose
 nvm
 direnv
 ansible
+tmux
