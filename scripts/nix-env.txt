@@ -1,0 +1,4 @@
+git
+tmux
+jq
+direnv
