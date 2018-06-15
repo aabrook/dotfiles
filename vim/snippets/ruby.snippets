@@ -22,3 +22,8 @@ snippet class
 	class ${1}
 		${2}
 	end
+
+snippet err
+	Rails.logger.error "***" * 5
+	Rails.logger.error ${1}
+	Rails.logger.error "***" * 5
