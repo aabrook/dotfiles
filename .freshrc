@@ -11,8 +11,16 @@ fresh freshshell/fresh bin/fresh --bin
 
 fresh rupa/z z.sh
 
+fresh-options --file=~/.gitconfig.config
+  fresh git/\*.config
+fresh-options
+
 fresh-options --file=~/.vimrc
   fresh vim/config/\*.vim
+fresh-options
+
+fresh-options --file=~/.config/nvim/coc-settings.json
+  fresh vim/config/\*.coc
 fresh-options
 
 # fresh vim/schemes/eclipse.vim --file=~/.vim/colors/eclipse.vim
