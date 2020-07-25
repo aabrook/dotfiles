@@ -22,6 +22,7 @@
         ag
         iterm
         vscode
+        slack
       ];
     };
   }

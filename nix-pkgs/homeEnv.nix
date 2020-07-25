@@ -16,6 +16,7 @@
         vscode
 
         stack
+        slack
       ];
     };
   };
