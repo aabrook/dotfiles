@@ -10,10 +10,8 @@ let
         owner = "tweekmonster";
         repo = "wstrip.vim";
         rev = "028265";
-        # Find the sha
-        # sha256 = "1cx0bj1c1ynzqqvjx0rrbkbhkql6zs11k6sbpbn7gdch4437cjzs";
-      }); # + "/plugins/nvim";
-
+        sha256 = "0rx1vxibnawbiwawgbbajgpgss9fcv6nr7f91s24ljl8869gc507";
+      });
     };
   };
 in
@@ -32,12 +30,12 @@ in
       vam.pluginDictionaries = [
         { name = "vim-auto-save"; }
         { name = "nerdtree"; }
+        { name = "wstrip"; }
+        { name = "vim-fugitive"; }
+
       ];
       customRC = 
-        import ./default.nix {} + import ./mappings.nix {};
-      # plug.plugins = with pkgs.vimPlugins; [
-      #   nerdtree
-      # ];
+        import ./default.nix {} + import ./mappings.nix {} + import ./extensions.nix {};
     };
   };
 }
