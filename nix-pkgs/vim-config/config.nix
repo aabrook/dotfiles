@@ -32,7 +32,9 @@ in
         { name = "nerdtree"; }
         { name = "wstrip"; }
         { name = "vim-fugitive"; }
-
+        { name = "fzf-vim"; }
+        { name = "ack-vim"; }
+        { name = "bufexplorer"; }
       ];
       customRC = 
         import ./default.nix {} + import ./mappings.nix {} + import ./extensions.nix {};
