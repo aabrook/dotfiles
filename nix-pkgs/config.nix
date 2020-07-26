@@ -1,20 +1,19 @@
 { pkgs, ... }:
+
 let
   sharedEnv = [
-        # git
-        pkgs.brave
-        pkgs.neovim
-        pkgs.fzf
-        pkgs.zsh
-        pkgs.oh-my-zsh
-        pkgs.jq
-        pkgs.direnv
-
-        pkgs.ag
-        pkgs.thefuck
-        pkgs.vscode
-        pkgs.slack
-      ];
+    pkgs.brave
+    # pkgs.neovim
+    pkgs.fzf
+    pkgs.zsh
+    pkgs.oh-my-zsh
+    pkgs.jq
+    pkgs.direnv
+    pkgs.ag
+    pkgs.thefuck
+    pkgs.vscode
+    pkgs.slack
+  ];
 in 
 {
   allowUnfree =true;

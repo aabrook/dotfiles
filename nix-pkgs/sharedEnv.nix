@@ -4,7 +4,7 @@
       paths = [
         # git
         brave
-        neovim
+        # neovim
         fzf
         zsh
         oh-my-zsh
@@ -17,5 +17,5 @@
         slack
       ];
     };
-  }
-};
+  };
+}
