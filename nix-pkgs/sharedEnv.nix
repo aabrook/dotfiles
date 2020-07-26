@@ -1,9 +1,8 @@
 {
   packageOverrides = pkgs: with pkgs; {
     myPackages = pkgs.buildEnv {
-      name = "workEnv";
       paths = [
-        git
+        # git
         brave
         neovim
         fzf

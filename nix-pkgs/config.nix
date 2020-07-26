@@ -1,46 +1,42 @@
+{ pkgs, ... }:
+let
+  sharedEnv = [
+        # git
+        pkgs.brave
+        pkgs.neovim
+        pkgs.fzf
+        pkgs.zsh
+        pkgs.oh-my-zsh
+        pkgs.jq
+        pkgs.direnv
+
+        pkgs.ag
+        pkgs.thefuck
+        pkgs.vscode
+        pkgs.slack
+      ];
+in 
 {
   allowUnfree =true;
+
   packageOverrides = pkgs:
   rec {
     homeEnv = pkgs.buildEnv {
       name = "homeEnv";
-      paths = with pkgs; [
-        git
-        vim
-        brave
-        neovim
-        fzf
-        zsh
-        oh-my-zsh
-        alacritty
-        ag
-        thefuck
-        vscode
-      ];
+      paths = [
+        pkgs.alacritty
+        pkgs.stack
+      ] ++ sharedEnv;
     };
     workEnv = pkgs.buildEnv {
       name = "workEnv";
-      paths =  with pkgs; [
-        git
-        vim
-        brave
-        neovim
-        fzf
-        zsh
-        oh-my-zsh
-        jq
-        direnv
-
-        gradle
-        sbt
-        coreutils
-
-        thefuck
-        tree
-        ag
-        iterm
-        vscode
-      ];
+      paths = [
+        pkgs.gradle
+        pkgs.sbt
+        pkgs.coreutils
+        pkgs.tree
+        pkgs.itermS
+      ] ++ sharedEnv;
     };
   };
 }
