@@ -6,6 +6,6 @@
 
   imports = [
     ./git-config/config.nix
-    ./vim-config/config.nix
+#     ./vim-config/config.nix
   ];
 }

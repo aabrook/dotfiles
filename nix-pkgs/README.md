@@ -9,4 +9,4 @@ https://nixos.org/nixpkgs/manual/#chap-packageconfig
 
 For dotfiles
 ln -s ~/.dotfiles/nix-pkgs ./.config/nixpkgs
-Install home: https://github.com/rycee/home-manager
+Install home: https://github.com/nix-community/home-manager

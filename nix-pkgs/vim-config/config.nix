@@ -18,23 +18,28 @@ in
 {
   programs.neovim = {
     enable = true;
+    viAlias = true;
+    vimAlias = true;
+
     configure = {
       packages.myVimPackage = with pkgs.vimPlugins; {
         # Loaded on launch
-        start = [ ];
+        start = [ fzf-vim ack-vim bufexplorer nerdtree fzfWrapper vim-nix fugitive ];
         # Manually loadable by calling `:packadd $plugin-name
         opt = [ ];
       };
 
-      vam.knownPlugins = pkgs.vimPlugins // customPlugins;
+      vam.knownPlugins = pkgs.plug.vimPlugins // customPlugins;
       vam.pluginDictionaries = [
-        { name = "vim-auto-save"; }
-        { name = "nerdtree"; }
-        { name = "wstrip"; }
-        { name = "vim-fugitive"; }
-        { name = "fzf-vim"; }
-        { name = "ack-vim"; }
-        { name = "bufexplorer"; }
+      	{ names = [
+          "vim-auto-save"
+          "nerdtree"
+          "wstrip"
+          "vim-fugitive"
+          "fzf-vim"
+          "ack-vim"
+          "bufexplorer"
+        ];}
       ];
       customRC = 
         import ./default.nix {} + import ./mappings.nix {} + import ./extensions.nix {};
