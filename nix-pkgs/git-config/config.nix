@@ -37,6 +37,8 @@
       po =     "push origin";
       # Pretty Printing
       lg =     "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches";
+      # Useful
+      recent = "!git for-each-ref --color=always --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | less -r";
     };
     extraConfig = {
       core.editor = "nvim";
